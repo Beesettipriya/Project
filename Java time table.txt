@@ -1,0 +1,531 @@
+06/11/2023 ------
+1.Java methods like  non-static(With creating obj we can execute the method)
+                 public class Nature {
+	public static void main(String[] args) {
+		Nature obj = new Nature();
+		 obj.myMethod();
+	}
+		public void myMethod() {
+			System.out.println("Hello everyone");
+		}
+		
+		
+	}
+2.Java methods like static(With creating objects we can execute the method)
+           
+             public class Nature {
+	public static void main(String[] args) {
+	     myMethod();
+	}
+		public static void myMethod() {
+			System.out.println("Hello everyone");
+		}
+
+3.Java methods with parameters ---
+          
+       public class Switch {
+	public static void myMethod(String xyz) {
+		System.out.println(xyz);
+		
+	}
+	public static void main(String[] args) {
+		myMethod("priya");
+		myMethod("sravani");
+        }
+4.Java methods with multiple parameters -----
+      public class Switch {
+	
+	public static void myMethod(String xyz,int num) {
+		System.out.println(xyz + num);
+		
+	}
+	public static void main(String[] args) {
+		myMethod("priya",20);
+		myMethod("sravani", 20);
+	}
+	}
+5.Java methods with multiple parameters ------
+     public class New {
+	public static void myTable(String name,int age,String qualify) {
+		System.out.println(name+ " " +age+ "  "+qualify );
+	}
+	public static void main(String[] args) {
+		myTable("priya",21,"Graduate");
+		myTable("sravani",22,"Graduate");
+	}
+
+}
+6.Java methods with different parameters -----
+    
+public class Mobile {
+	public static void androidType(String name,int cost,String brandname,boolean display) {
+		System.out.println(name+ "  "+cost+"  "+brandname+"  "+display);
+	}
+	public static void main(String[] args) {
+		androidType("priya",20000,"realme",true);
+		androidType("sravani",25000,"redme",false);
+	}
+
+}
+7.Java different/multiple methods with different parameters ----
+ 
+public class Desktop {
+	public static void myLaptop(String name,int cost,String brandname) {
+		System.out.println(name+cost+brandname);
+	}
+	public static void myLaptop1(String name,int cost,String brandname) {
+		System.out.println(name+cost+brandname);
+	}
+	public static void main(String[] args) {
+		myLaptop("priya",45000,"hp");
+		myLaptop1("sravani",45000,"dell");
+
+	}
+
+}
+8.Java multiple methods with different parameters -----
+ 
+public class Jobseekers {
+	public static void myFriends(String name,boolean job,String qualify) {
+		System.out.println(name+","+job+","+qualify);
+	}
+	public static void myFriends1(String name,boolean job,String location,int salary) {
+		System.out.println(name+","+job+","+location+","+salary);
+	}
+	public static void main(String[] args) {
+		myFriends("priya",false,"intern");
+		myFriends("princy",false,"training for bank exams");
+		myFriends("bhuvana",false,"msc");
+		myFriends("suvarna",false,"married");
+		myFriends("venky",false,"msc");
+		myFriends("prasu",false,"married");
+		myFriends1("santhu",true,"banglore",15000);
+		myFriends1("satya",true,"hyderabad",12000);
+		myFriends1("latha",true,"rajahmundry",10000);
+	}
+	}
+9.Even or odd by using method -
+      public class Evenorodd {
+	public static void myNumber() {
+		int n = 50;
+		if(n%2==0) {
+			System.out.println("Even number "+n*100);
+		}else {
+			System.out.println("odd numbe "+n*50);
+		}
+		
+	}
+	public static void main(String[] args) {
+		
+	myNumber();
+		
+	}
+07/11/2023 -------
+1.Conditional statements by using methods with creating objects -
+   
+public class Promotion {
+	public void myMethod() {
+		int a = 30;
+		int b = 20;
+		if(a<b) {
+			System.out.println("a is less than b");
+		}else {
+			System.out.println("a is greater than b");
+		}
+	}
+	public static void main(String[] args) {
+		Promotion myObj = new Promotion();
+		myObj.myMethod();
+	}
+}
+
+2.conditional statements(if-else) -Less than 
+  
+public class Interview {
+	public static void main(String[] args) {
+		int salary = 25000;
+		if(salary <20000) {
+			System.out.println("Expected salary");
+		}else {
+			System.out.println("Not expected");
+		}
+	}
+
+}
+3.conditional statements(if-else)- not equal to
+   
+public class Examsheet {
+	public static void main(String[] args) {
+		int marks = 150;
+		if(marks!=100) {
+			System.out.println("You are selected");
+		}else {
+			System.out.println("You are not selected");
+		}
+	}
+
+}
+4.conditional statements(if-else) -equal to
+  
+public class Percentage {
+	public static void main(String[] args) {
+		String name = "Sravani";
+		if(name == "Priya") {
+		   System.out.println("valid name");	
+		}else {
+			System.out.println("invalid name");
+		}
+	}
+
+}
+5.String methods by using arraylist and for each loop -
+  
+  
+import java.util.ArrayList;
+
+public class Practice {
+
+	public static void main(String[] args) {
+		ArrayList<String>names = new ArrayList<>();
+		names.add("Priya");
+		names.add("sravani");
+		names.add("sriya");
+		for(String list:names) {
+			System.out.println(list);
+		}
+			
+	}
+
+}
+6.string methods(Integer) by using list and for each loop - 
+  
+import java.util.ArrayList;
+import java.util.List;
+
+public class Keyboard {
+     public static void main(String[] args) {
+    	 List<Integer>numbers = new ArrayList<>();
+    	 numbers.add(10);
+    	 numbers.add(20);
+    	 numbers.add(30);
+    	 numbers.clear();
+    	 for(Integer list:numbers) {
+    		 System.out.println(list);
+    	 }
+     }
+}
+08/11/2023 -------
+1.Arraylist by using for each loop and if else conditional statement -
+ 
+import java.util.ArrayList;
+
+public class Dell {
+	public static void main(String[] args) {
+		ArrayList<Double>numbers = new ArrayList<>();
+		numbers.add(4.234d);
+		numbers.add(2.3456d);
+		numbers.add(2.3456d);
+		for(double list:numbers) {
+			if(list>0) {
+				System.out.println("it is a double data type");
+			}else {
+			System.out.println("it is not a double data type");
+		}
+		
+		
+	}
+
+}
+}
+2.Arraylist by using for each loop and if else conditional statement - 
+  
+import java.util.ArrayList;
+
+public class Office {
+	public static void main(String[] args) {
+		ArrayList<String>names = new ArrayList<>();
+		names.add("priya");
+		names.add("sravani");
+		names.add("anitha");
+		names.add("shyamala");
+		for(String list: names) {
+			if(list.equals("juvi")) {
+			 System.out.println("valid data");	
+			}else {
+			System.out.println("invalid");
+			}
+		}
+	}
+
+}
+3.Arraylist by using for each loop and if else conditional statement - 
+  
+  
+import java.util.ArrayList;
+
+public class Adapter {
+	public static void main(String[] args) {
+		ArrayList<String>names= new ArrayList<>();
+		names.add("PRIYA");
+		names.add("SRAVANI");
+		names.add("PAVANI");
+		for(String list:names) {
+			if(list.equals("PRIYA")) {
+				System.out.println("valid");
+			}
+		}
+		}
+}
+4.pojo class - plain odd java object 
+  
+  
+public class Expojo {
+	private String studentName;
+	private int studentAge;
+   public void setStudentName(String studentName) {
+	 this.studentName=studentName;
+   }
+   public void setStudentAge(int studentAge) {
+	 this.studentAge =studentAge;
+   }
+   public String getStudentName() {
+	 return this.studentName;
+   }
+   public int getStudentAge() {
+	 return  this.studentAge;
+   }
+ 
+	
+	
+}
+5.pojo class- main class 
+  
+  
+public class Exmain {
+	public static void main(String[] args) {
+		Expojo myObj = new Expojo();
+		myObj.setStudentName("Priya");
+		myObj.setStudentAge(21);
+		
+	    Exmain.execute(myObj);
+	    
+	}
+	public static void execute(Expojo myObj1) {
+		System.out.println(myObj1.getStudentName());
+		System.out.println(myObj1.getStudentAge());
+		
+	}
+
+}
+6.Pojo class with multiple variables 
+  
+   
+public class Student {
+	private String StudentName;
+	private int StudentAge;
+	private String Education;
+  public void setStudentName(String StudentName) {
+	  this.StudentName=StudentName;
+  }
+  public void setStudentAge(int StudentAge) {
+	  this.StudentAge=StudentAge;
+  }
+  public void setEducation(String Education) {
+	  this.Education=Education;
+  }
+  public String getStudentName() {
+	return StudentName;
+	  
+  }
+  public int getStudentAge() {
+	  return StudentAge;
+  }
+  public String getEducation() {
+	  return Education;
+  }
+7.pojo class by using all data types -
+ 
+  
+public class Water {
+	private String Name;
+	private int Age;
+	private String Gender;
+	private int Salary;
+	private long Contact;
+	private float Cgpa;
+	private long Adhaar;
+	
+	public void setName(String Name) {
+		this.Name=Name;
+	}
+	public String getName() {
+		return this.Name;
+	}
+	public void setAge(int Age) {
+		this.Age=Age;
+	}
+	public int getAge() {
+		return this.Age; 
+	}
+	public void setGender(String Gender) {
+	    this.Gender=Gender;	
+	}
+	public String getGender() {
+		return this.Gender;
+	}
+    public void setSalary(int Salary) {
+    	this.Salary=Salary;
+    }
+    public int getSalary() {
+    	return this.Salary;
+    }
+    public void setContact(long Contact) {
+    	this.Contact=Contact;
+    }
+    public long getContact() {
+    	return this.Contact; 
+    }
+    public void setCgpa(float Cgpa) {
+    	this.Cgpa=Cgpa;
+    }
+    public float getCgpa() {
+    	return this.Cgpa; 
+    }
+    public void setAdhaar(long Adhaar) {
+    	this.Adhaar=Adhaar;
+    }
+    public long getAdhaar() {
+    	return this.Adhaar;
+    }
+    
+    
+}
+
+  
+  
+	
+}
+9.main class with all data types - 
+
+  
+public class Bottle {
+	
+	public static void main(String[] args) {
+		System.out.println("Create account:");
+		Water obj=new Water();
+		obj.setName("anjali");
+		obj.setAge(21);
+		obj.setGender("Female");
+		obj.setSalary(20000);
+		obj.setContact(9492475084L);
+		obj.setCgpa(8.96f);
+		obj.setAdhaar(893302789452L);
+		Bottle.Drink(obj);
+	}
+	public static void Drink(Water maaza) {
+	  
+	  System.out.println(maaza.getName());	
+	  System.out.println(maaza.getAge());
+	  System.out.println(maaza.getGender());
+	  System.out.println(maaza.getSalary());
+	  System.out.println(maaza.getContact());
+	  System.out.println(maaza.getCgpa());
+	  System.out.println(maaza.getAdhaar());
+	}
+
+}
+7.main class with multiple variables 
+  
+  
+public class College {
+	public static void main(String[] args) {
+		Student Obj = new Student();
+		Obj.setStudentName("Priya");
+		Obj.setStudentAge(21);
+		Obj.setEducation("Graduate");
+		College.management(Obj);
+	}
+  public static void management(Student Obj2){
+	  System.out.println(Obj2.getStudentName());
+	  System.out.println(Obj2.getStudentAge());
+	  System.out.println(Obj2.getEducation());
+  }
+
+}
+8.pojo class with 4 variables
+ 
+ 
+public class Petrol {
+    //variables must be in private
+	private String myName;
+	private int myAge;
+	private long myContact;
+	private String myQualify;
+	
+   //Generate setters to the above variables
+	public void setmyName(String myName ) {
+		this.myName=myName;
+	}
+	public void setmyAge(int myAge) {
+		this.myAge=myAge;
+	}
+	public void setmyContact(long myContact) {
+		this.myContact = myContact;
+	}
+	public void setmyContact(String myQualify) {
+		this.myQualify =myQualify;
+	}
+	//Generate getters to the above variables
+	public String getmyName() {
+		return myName;
+	}
+	public int getmyAge() {
+		return myAge;
+	}
+	public long getmyContact() {
+		return myContact;
+	}
+	public String getmyQualify() {
+		return myQualify;
+	}
+	
+	
+	
+	
+}
+9.main class ----
+
+ 
+public class Bike {
+	public static void main(String[] args) {
+		Petrol liquid = new Petrol();
+		liquid.setmyName("Priya");
+		liquid.setmyAge(21);
+		liquid.setmyContact(9490353384l);
+		liquid.setmyContact("Graduate");
+		Bike.Diesel(liquid);
+		
+	}
+	public static void Diesel(Petrol New) {
+		System.out.println(New.getmyName());
+		System.out.println(New.getmyAge());
+		System.out.println(New.getmyContact());
+		System.out.println(New.getmyQualify());
+		
+	}
+
+}
+09/11/2023 - 
+1.
+
+
+
+	
+
+
+	
+
+
+        
+    
+                                   
